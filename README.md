@@ -4,7 +4,7 @@ CPU Load Widget - Get the CPU load with style
 > *This is a small and simple CPU Load Widget. The software can be used free of charge by any person obtaining a copy of this software and associated documentation files.*
 
 ## White with blue decoration style
-> This style is created using *CSS_CpuLoadWidget.css* file located in `src/cpuloadwidget/resources/`
+> This style is created using *CSS_CpuLoadWidget_WhiteAndBlue.css* file located in `src/cpuloadwidget/resources/`
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/16362429/38322731-f0d15140-3843-11e8-842a-b08c2ac5442b.png?raw=true" alt="Sublime's custom image"/>
