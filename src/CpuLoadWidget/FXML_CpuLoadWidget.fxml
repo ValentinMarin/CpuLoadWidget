@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" styleClass="s_anch_background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CpuLoadWidget.FXML_CpuLoadWidgetController">
+   <children>
+      <Circle fill="#ff591f" layoutX="76.0" layoutY="75.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" styleClass="s_progress_outer_circle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Arc fx:id="arc_progress" fill="DODGERBLUE" layoutX="75.0" layoutY="75.0" length="5.0" radiusX="75.0" radiusY="75.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="s_progress_circle" type="ROUND" />
+      <Circle fill="#ff591f" layoutX="75.0" layoutY="75.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="s_progress_inner_circle" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0" />
+      <AnchorPane layoutX="20.0" layoutY="64.0" prefHeight="27.0" prefWidth="109.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="19.0" layoutY="6.0" onMouseClicked="#btn_about_clicked" pickOnBounds="true" preserveRatio="true" styleClass="s_btn_about_image" />
+            <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="48.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" styleClass="s_btn_settings_image" />
+            <ImageView fx:id="btn_close" fitHeight="14.0" fitWidth="14.0" layoutX="77.0" layoutY="6.0" onMouseClicked="#btn_close_clicked" pickOnBounds="true" preserveRatio="true" styleClass="s_btn_close_image" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lbl_percent" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="26.0" layoutY="25.0" styleClass="s_progress_label" text="100" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.rightAnchor="67.0">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_percent1" layoutX="95.0" layoutY="40.0" styleClass="s_progress_label" text="\%" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="99.0" styleClass="s_progress_label" text="CPU Load" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

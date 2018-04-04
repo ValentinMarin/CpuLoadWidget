@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 3, 2018, 7:24:58 PM
+    Author     : marin
+*/
+
+.s_anch_background {
+    -fx-background-color: transparent;
+}
+.s_progress_circle {
+    -fx-fill: #00a8ff;
+    -fx-stroke-width: 0;
+}
+
+.s_progress_inner_circle {
+    -fx-fill: #f5f6fa;
+    -fx-effect: innershadow( gaussian , #00a8ff, 5, 0.6, 0, 0);
+}
+
+.s_progress_outer_circle {
+    -fx-fill: #f5f6fa;
+    -fx-stroke: #00a8ff;
+}
+
+.s_progress_label {
+    -fx-text-fill: #00a8ff;
+}
+
+/* + Button Style */
+.s_btn_close_image {
+    -fx-image: url("../images/exit_ico_white.png");
+    -fx-effect: innershadow( gaussian , #00a8ff , 7 , 0.1 , 1 , 1 );
+}
+.s_btn_close_image:hover {
+    -fx-image: url("../images/exit_ico_white.png");
+    -fx-effect: innershadow( gaussian , #00a8ff , 7 , 1 , 1 , 1 );
+}
+
+.s_btn_settings_image {
+    -fx-image: url("../images/settings_white.png");
+    -fx-effect: innershadow( gaussian , #00a8ff , 7 , 0.1 , 1 , 1 );
+}
+.s_btn_settings_image:hover {
+    -fx-image: url("../images/settings_white.png");
+    -fx-effect: innershadow( gaussian , #00a8ff , 7 , 1 , 1 , 1 );
+}
+
+.s_btn_about_image {
+    -fx-image: url("../images/about_white.png");
+    -fx-effect: innershadow( gaussian , #00a8ff , 7 , 0.1 , 1 , 1 );
+}
+
+.s_btn_about_image:hover {
+    -fx-image: url("../images/about_white.png");
+    -fx-effect: innershadow( gaussian , #00a8ff , 7 , 1 , 1 , 1 );
+}
+/* - Button Style */
+
