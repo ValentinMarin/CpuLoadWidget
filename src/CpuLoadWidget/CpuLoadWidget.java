@@ -37,7 +37,7 @@ public class CpuLoadWidget extends Application {
         
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
-        String css = this.getClass().getResource("resources/CSS_CpuLoadWidget.css").toExternalForm(); 
+        String css = this.getClass().getResource("resources/CSS_CpuLoadWidget_WhiteAndBlue.css").toExternalForm(); 
         scene.getStylesheets().add(css);
         
         stage.initStyle(StageStyle.TRANSPARENT);
